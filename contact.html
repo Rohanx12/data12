@@ -173,72 +173,66 @@
         <div class="untree_co--site-section">
           <div class="container">
             
-              <div class="row">
-                <div class="col-12" data-aos="fade-up">
+            <div class="row">
+              <div class="col-12" data-aos="fade-up">
                   <h2 class="display-4 mb-5">Fill the form</h2>
-                </div>
-                <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                  
-                  <form action="#">
-                    <div class="form-group">
-                      <label for="name">Your Name *</label>
-                      <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                      <label for="email2">Your Email *</label>
-                      <input type="text" class="form-control" id="email2">
-                    </div>
-                    <div class="form-group">
-                      <label for="subject">Subject</label>
-                      <input type="text" class="form-control" id="subject">
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message *</label>
-                      <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" value="Send" class="btn btn-black px-5 text-white">
-                    </div>
-                  </form>
-                </div>
-                <div class="col-md-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
-                  <!-- <div class="media-29190">
-                    <span class="label">Email</span>
-                    <p><a href="#">info@Untree.co</a></p>
-                  </div> -->
-                  <div class="media-29190">
-                    <span class="label">Phone</span>
-                    <p>
-                      <a href="tel:8496011607">8496011607</a> <br>
-                      <a href="tel:7259875012">7259875012</a>
-                    </p>
-                    
-                  </div>
-                  <div class="media-29190">
-                    <span class="label">Address</span>
-                    <p>Manar Complex, Jyothi Circle,<br> New Balmatta Road, Balmatta, Mangaluru, <br>
-                      Karnataka 575001</p>
-                  </div>
-                  <div class="media-29190">
-                    <span class="label">Social</span>
-                    <ul class="icons-top icons-dark">
-                      <li>
-                        <a href="#"><span class="icon-facebook"></span></a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="icon-twitter"></span></a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="icon-instagram"></span></a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="icon-tripadvisor"></span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
               </div>
+              <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                  <form action="send_email.php" method="POST">
+                      <div class="form-group">
+                          <label for="name">Your Name *</label>
+                          <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email2">Your Email *</label>
+                          <input type="email" class="form-control" id="email2" name="email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="subject">Subject</label>
+                          <input type="text" class="form-control" id="subject" name="subject">
+                      </div>
+                      <div class="form-group">
+                          <label for="message">Message *</label>
+                          <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
+                      </div>
+                      <div class="form-group">
+                          <input type="submit" value="Send" class="btn btn-black px-5 text-white">
+                      </div>
+                  </form>
+              </div>
+              <div class="col-md-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+                  <div class="media-29190">
+                      <span class="label">Phone</span>
+                      <p>
+                          <a href="tel:8496011607">8496011607</a> <br>
+                          <a href="tel:7259875012">7259875012</a>
+                      </p>
+                  </div>
+                  <div class="media-29190">
+                      <span class="label">Address</span>
+                      <p>Manar Complex, Jyothi Circle,<br> New Balmatta Road, Balmatta, Mangaluru, <br>
+                          Karnataka 575001</p>
+                  </div>
+                  <div class="media-29190">
+                      <span class="label">Social</span>
+                      <ul class="icons-top icons-dark">
+                          <li>
+                              <a href="#"><span class="icon-facebook"></span></a>
+                          </li>
+                          <li>
+                              <a href="#"><span class="icon-twitter"></span></a>
+                          </li>
+                          <li>
+                              <a href="#"><span class="icon-instagram"></span></a>
+                          </li>
+                          <li>
+                              <a href="#"><span class="icon-tripadvisor"></span></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          
             
           </div>
         </div>
