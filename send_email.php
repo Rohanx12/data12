@@ -6,17 +6,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     $to = "rohankotekar123@gmail.com";
-    $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    
-    $body = "Name: $name\n";
-    $body .= "Email: $email\n\n";
-    $body .= "Message:\n$message\n";
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
 
-    if (mail($to, $subject, $body, $headers)) {
+    $mail_body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+
+    if (mail($to, $subject, $mail_body, $headers)) {
         echo "Email sent successfully.";
     } else {
-        echo "Failed to send email.";
+        echo "Email sending failed.";
     }
+} else {
+    echo "Invalid request.";
 }
 ?>
