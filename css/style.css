@@ -2206,7 +2206,7 @@ body, h2, p {
 .skip {
   background: #E6E6E6;
   color: #555; /* Adjusted text color for better contrast */
-  border: 2px solid #555;
+  border: 2px solid #007bff;
 }
 
 .popup-button:hover {
