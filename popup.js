@@ -1,8 +1,8 @@
-// Show popup after 5 seconds
+// Show popup after 30 seconds
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('popup').style.display = 'flex';
-    }, 5000);
+    }, 30000);
 
     // Close popup when "Skip" is clicked
     document.getElementById('skip').onclick = function() {
