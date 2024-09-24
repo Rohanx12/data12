@@ -2,7 +2,7 @@
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('popup').style.display = 'flex';
-    }, 300);
+    }, 30000);
 
     // Close popup when "Skip" is clicked
     document.getElementById('skip').onclick = function(event) {
