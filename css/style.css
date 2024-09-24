@@ -2171,7 +2171,7 @@ body, h2, p {
 
 .popup-content h2 {
   font-family: 'Cormorant Garamond', serif;
-  color: #D5343E; /* Added a more exciting color for the heading */
+  color: #007bff; /* Added a more exciting color for the heading */
   margin-bottom: 10px;
 }
 
