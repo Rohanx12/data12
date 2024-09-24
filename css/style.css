@@ -2198,10 +2198,12 @@ body, h2, p {
 }
 
 .contact-us {
+  color: white;
   background: #007bff;
 }
 
 .skip {
+  color: whire;
   background: #000000;
 }
 
