@@ -2206,12 +2206,12 @@ body, h2, p {
 .skip {
   background: #E6E6E6;
   color: #555; /* Adjusted text color for better contrast */
-  border: 2px solid #007bff;
+  border: 2px solid #007bff95;
 }
 
 .popup-button:hover {
   opacity: 1; /* Removed fade, making it more solid */
-  background: #333; /* Changed hover background to black */
+  background: #333333; /* Changed hover background to black */
   color: #fff; /* White text on hover */
 }
 
