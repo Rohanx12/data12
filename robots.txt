@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 User-agent: *
 Allow: /
 Sitemap: https://www.shineandklean.in/sitemap.xml
+=======
+User-agent: *
+Allow: /
+Sitemap: https://www.shineandklean.in/sitemap.xml
+>>>>>>> eaf778e41ddf1ab76e11968c2e6e709b1d5b29ee
