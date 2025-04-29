@@ -2231,3 +2231,63 @@ body, h2, p {
   }
 }
 
+/* moved from index for seo*/
+
+/* Testimonials section styles */
+#testimonials .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 420px;              /* fixed height */
+  display: flex;
+  flex-direction: column;
+}
+#testimonials .card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+#testimonials .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.testimonial-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #5A8FD2;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.testimonial-avatar:hover {
+  transform: rotate(10deg) scale(1.15);
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+.star-rating {
+  color: #FFD700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+/* put this in the same <style> block where your testimonial styles live */
+#testimonials .row {
+/* Bootstrap’s vertical gutter */
+--bs-gutter-y: 2rem;     /* adds a 2rem gap between wrapped rows */ 
+/* fallback for non-Bootstrap grid gap support */
+row-gap: 2rem;
+}
+
+#testimonials h2 {
+  color: #707070;
+}
+#testimonials p.intro {
+  color: #707070;
+}
